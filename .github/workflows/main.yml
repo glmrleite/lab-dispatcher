@@ -1,0 +1,12 @@
+name: Dispatcher Example
+
+on:
+  repository_dispatch:
+    types: [ build ]
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Hello World
+         run: echo "Hello World"
